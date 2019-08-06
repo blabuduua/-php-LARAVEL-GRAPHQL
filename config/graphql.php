@@ -124,11 +124,16 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-
+                'allBits' => \App\GraphQL\Query\AllBitsQuery::class,
+                'bitById' => \App\GraphQL\Query\BitByIdQuery::class,
             ],
             'mutation' => [
                 'signUp' => \App\GraphQL\Mutation\SignUpMutation::class,
                 'logIn' => \App\GraphQL\Mutation\LogInMutation::class,
+                'newBit' => \App\GraphQL\Mutation\NewBitMutation::class,
+                'replyBit' => \App\GraphQL\Mutation\ReplyBitMutation::class,
+                'likeBit' => \App\GraphQL\Mutation\LikeBitMutation::class,
+                'unlikeBit' => \App\GraphQL\Mutation\UnlikeBitMutation::class,
             ]
         ]
     ],
