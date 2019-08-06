@@ -181,7 +181,9 @@ return [
      * ]
      */
     'types' => [
-
+        'User' => \App\GraphQL\Type\UserType::class,
+        'Bit' => \App\GraphQL\Type\BitType::class,
+        'Reply' => \App\GraphQL\Type\ReplyType::class,
     ],
 
     /*
